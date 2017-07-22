@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <link href="Styles/StyleMaster.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <div class="menu">
+                <ul>
+                    <li><a href="Default.aspx">Home</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                <div class="tasksearch" data-reactid="57"><input type="text" value="" class="LM6RPg" title="Search with Task Number" name="q" autocomplete="off" placeholder="Search with Task Number" data-reactid="58" /></div>
+                    <ul class="_3Ji-EC" data-reactid="7">
+                        <li class="_2sYLhZ _2mEF1S" data-reactid="26">
+                            <a class="_1AHrFc _2k0gmP" href="/account/?rd=0&amp;link=home_account" data-reactid="27"></a>
+                            <ul class="_1u5ANM" data-reactid="28">
+                                <li class="_2f5Jjv" data-reactid="29"><a class="_2k0gmP" href="/account/?rd=0&amp;link=home_account" data-reactid="30">Profile</a></li>
+                                <li class="_2f5Jjv" data-reactid="31"><a class="_2k0gmP" href="/account/orders?link=home_orders" data-reactid="32">Change Password</a></li>
+                                <li class="_2f5Jjv" data-reactid="45"><a class="_2k0gmP" href="#" data-reactid="46">Log Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> 
+            <div class="clear"></div>
+            <div class="content"><asp:ContentPlaceHolder id="ContentBody" runat="server"></asp:ContentPlaceHolder></div>
+            <div class="clear"></div>
+            <div class="footer"><h2>copyright@Ittina.com</h2></div>
+   </div>
+ </form>
+</body>
+</html>
